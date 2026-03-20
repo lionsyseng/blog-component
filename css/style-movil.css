@@ -1,0 +1,38 @@
+
+:root {
+
+     /** Declaración de tamaños de fuente **/
+    --fuente-tamano-btn: 10px;
+    --fuente-tamano-title: 16px;
+    --fuente-tamano-cuerpo: 12px;
+
+}
+
+@media (min-width:300px) and (max-width: 468px){
+    /** Estilo de la tajerta del blog **/
+.card-blog {
+    margin: 130px auto;
+    width: 85%;
+}
+
+/** Estilo del título del blog **/
+.container-main .titulo {
+    font-family: var(--fuente-titulo);
+    font-size: var(--fuente-tamano-title);
+    font-weight: var(--fuente-peso-titulo);
+}
+
+/** Estilo del mensaje del blog **/
+.container-main .mensaje {
+    font-family: var(--fuente-cuerpo);
+    font-size: var(--fuente-tamano-cuerpo);
+    font-weight: var(--fuente-peso-cuerpo);
+}
+
+/** Estilo del autor del blog **/
+.container-avatar .autor{
+    font-family: var(--fuente-titulo);
+    font-size: var(--fuente-tamano-cuerpo);
+    font-weight: var(--fuente-peso-titulo);
+}
+}

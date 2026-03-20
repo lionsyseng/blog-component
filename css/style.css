@@ -1,0 +1,145 @@
+/** Importación de api de Google Fonts **/
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap');
+
+/** Declaración de Constantes **/
+:root {
+
+    /** Declaración de colores **/
+    --yellow: hsl(47, 88%, 63%);
+    --yellow2: hsl(17, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+
+    /** Declaración de formato de fuente Figtree **/
+    --fuente-titulo: 'Figtree', sans-serif;
+    --fuente-peso-titulo: 800;
+
+    /** Declaración de formato de fuente Outfit **/
+    --fuente-cuerpo: 'Outfit', sans-serif;
+    --fuente-peso-cuerpo: 500;
+
+    /** Declaración de tamaños de fuente **/
+    --fuente-tamano-btn: 14px;
+    --fuente-tamano-title: 20px;
+    --fuente-tamano-cuerpo: 16px;
+}
+
+/** Estilo del cuerpo de la página **/
+body {
+    background-color: var(--yellow);
+    display: grid;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+/** Estilo de la tajerta del blog **/
+.card-blog {
+    background-color: var(--white);
+    border: 1px solid;
+    border-radius: 15px;
+    box-shadow: 10px 10px 2px var(--gray-950);
+    height: auto;
+    margin: 80px auto;
+    width: 45%;
+}
+
+/** Estilo de los contenedores de la imagen y la información del blog **/
+.container-img, .container-main {
+    margin: 15px auto;
+    width: 90%;
+}
+
+/** Estilo para la imagen del blog**/
+.container-img .logo {
+    border-radius: 15px;
+    margin: 0px auto;
+    width: 100%;   
+}
+
+/** Estilo del botón del blog **/
+.container-main .button {
+    background-color: var(--yellow);
+    cursor: pointer;
+    font-family: var(--fuente-titulo);
+    font-size: var(--fuente-tamano-btn);
+    font-weight: var(--fuente-peso-titulo);
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    transition: transform 0.2s ease; /* Suaviza el efecto */
+}
+
+/** Efecto del botón del blog **/
+.container-main .button:hover {
+    background-color: var(--yellow);
+    transform: scale(1.1);
+}
+
+/** Estilo de la fecha de publicación del blog **/
+.container-main .fecha {
+    color: var(--gray-950);
+    font-family: var(--fuente-cuerpo);
+    font-size: var(--fuente-tamano-btn);
+    font-weight: var(--fuente-peso-cuerpo);
+}
+
+/** Estilo del título del blog **/
+.container-main .titulo {
+    cursor: pointer;
+    font-family: var(--fuente-titulo);
+    font-size: var(--fuente-tamano-title);
+    font-weight: var(--fuente-peso-titulo);
+}
+
+/** Efecto del título del blog **/
+.container-main .titulo:hover {
+    color: var(--yellow2);
+}
+
+/** Estilo del mensaje del blog **/
+.container-main .mensaje {
+    color: var(--gray-500);
+    font-family: var(--fuente-cuerpo);
+    font-size: var(--fuente-tamano-cuerpo);
+    font-weight: var(--fuente-peso-cuerpo);
+}
+
+/** Estilo para el contenedor del avatar del blog **/
+.container-avatar{
+    align-items: center;
+    display: flex;
+    height: auto;
+    justify-content: left;
+    margin: 15px auto;
+    width: 90%;
+}
+
+/** Estilo del avatar del blog **/
+.container-avatar .avatar {
+    border-radius: 50%;         /* Hace el avatar circular */
+    height: 30px;               /* Ajusta el tamaño vertical */
+    object-fit: cover;          /* Ajusta la imagen sin deformar */
+    vertical-align: middle;     /* Alinea verticalmente si hay texto */
+    width: 30px;                /* Ajusta el tamaño horizontal */
+}
+
+/** Estilo del autor del blog **/
+.container-avatar .autor{
+    font-family: var(--fuente-titulo);
+    font-size: var(--fuente-tamano-cuerpo);
+    font-weight: var(--fuente-peso-titulo);
+    margin: 10px;
+}
+
+/* Estilos del footer */
+.atribution {
+    font-size: 11px; text-align: center;
+    color: var(--slate-500);
+    margin: 10px;
+}
+
+.atribution a {
+    text-decoration: none;
+}
