@@ -11,7 +11,7 @@
 @media (min-width:300px) and (max-width: 468px){
     /** Estilo de la tajerta del blog **/
 .card-blog {
-    margin: 130px auto;
+    margin: 100px auto;
     width: 85%;
 }
 

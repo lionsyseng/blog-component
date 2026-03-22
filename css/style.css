@@ -71,6 +71,11 @@ body {
     transition: transform 0.2s ease; /* Suaviza el efecto */
 }
 
+.container-main .button a {
+    text-decoration: none;
+    color: black;
+}
+
 /** Efecto del botón del blog **/
 .container-main .button:hover {
     background-color: var(--yellow);
@@ -135,9 +140,10 @@ body {
 
 /* Estilos del footer */
 .atribution {
-    font-size: 11px; text-align: center;
     color: var(--slate-500);
-    margin: 10px;
+    font-size: 11px; 
+    margin: 5px auto;
+    text-align: center;
 }
 
 .atribution a {
